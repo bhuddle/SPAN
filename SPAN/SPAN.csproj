@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3F44876A-6521-44AB-B848-0270C1ECF391}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SPAN</RootNamespace>
+    <AssemblyName>SPAN</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ICPEligibleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ICPEligibleForm.Designer.cs">
+      <DependentUpon>ICPEligibleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IHPEligibleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IHPEligibleForm.Designer.cs">
+      <DependentUpon>IHPEligibleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IHEligibleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IHEligibleForm.Designer.cs">
+      <DependentUpon>IHEligibleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LandingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LandingForm.Designer.cs">
+      <DependentUpon>LandingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ICPNoChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ICPNoChangeForm.Designer.cs">
+      <DependentUpon>ICPNoChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NoChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoChangeForm.Designer.cs">
+      <DependentUpon>NoChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InHomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InHomeForm.Designer.cs">
+      <DependentUpon>InHomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InHomePaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InHomePaceForm.Designer.cs">
+      <DependentUpon>InHomePaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CbcPaceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CbcPaceForm.Designer.cs">
+      <DependentUpon>CbcPaceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IcpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IcpForm.Designer.cs">
+      <DependentUpon>IcpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NfcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NfcForm.Designer.cs">
+      <DependentUpon>NfcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CbcForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CbcForm.Designer.cs">
+      <DependentUpon>CbcForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CbcForm.resx">
+      <DependentUpon>CbcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CbcPaceForm.resx">
+      <DependentUpon>CbcPaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ICPEligibleForm.resx">
+      <DependentUpon>ICPEligibleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IHPEligibleForm.resx">
+      <DependentUpon>IHPEligibleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IHEligibleForm.resx">
+      <DependentUpon>IHEligibleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InHomePaceForm.resx">
+      <DependentUpon>InHomePaceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IcpForm.resx">
+      <DependentUpon>IcpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LandingForm.resx">
+      <DependentUpon>LandingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NfcForm.resx">
+      <DependentUpon>NfcForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ICPNoChangeForm.resx">
+      <DependentUpon>ICPNoChangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NoChangeForm.resx">
+      <DependentUpon>NoChangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InHomeForm.resx">
+      <DependentUpon>InHomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
